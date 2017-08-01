@@ -4,7 +4,7 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: Radeon (TM) RX 470 Graphics (ID=0x67df)
     Vendor:   ATI
-    VRAM:     3072 MB
+    VRAM:     4044 MB
     Driver:   22.19.162.4
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Managed\UnityEngine.dll (this message is harmless)
@@ -15,14 +15,14 @@ Platform assembly: C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Manag
 Loading C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.027 seconds
+- Completed reload, in  0.026 seconds
 Platform assembly: C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\OperatorGK\Documents\ProjectAsteroid\game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.932849 ms
+UnloadTime: 1.606651 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 12d4 -> priority: 1 
-  Thread -> id: 21e8 -> priority: 1 
+  Thread -> id: 2f68 -> priority: 1 
+  Thread -> id: 2f6c -> priority: 1 
