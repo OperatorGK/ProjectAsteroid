@@ -386,12 +386,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635672463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b545659cec0b79f49aacfa49a31e27cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 18f370c154c4d50499b20911955ab14b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
-  offset: 0.4
-  rend: {fileID: 0}
+  center: {x: 0, y: 0, z: 0}
+  axis_of_rotation: {x: 0, y: 1, z: 0}
+  frequency: 0.5
 --- !u!23 &1635672465
 MeshRenderer:
   m_ObjectHideFlags: 0
