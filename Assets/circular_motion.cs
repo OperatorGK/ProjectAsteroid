@@ -2,36 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class circular_motion : MonoBehaviour {
+public class Circular_motion : MonoBehaviour {
     public Vector3 center;
-    public Vector3 axisOfRotation;
+    public Vector3 axis;
     public float frequency;
+    public bool reverseForwardAndUpward;
 
     private Transform _transform;
-    private float radius;
-    private Vector3 omega;
+
 
 	// Use this for initialization
 	void Start () {
         _transform = this.transform;
-
-        radius = (_transform.position - center).magnitude;
-        omega = axisOfRotation.normalized * (2f * Mathf.PI * frequency); // omega has magnitute w = 2*pi*f
-	}
-	
-    void UpdateAxisOfRotation (Vector3 newAxis)
-    {
-        omega = axisOfRotation.normalized * (2f * Mathf.PI * frequency);
     }
-
+	
 	// Update is called once per frame
 	void Update () {
-        // v = omega x r
-        var velocity = Vector3.Cross(omega, _transform.position - center);
-        _transform.position += velocity * Time.deltaTime;
-        // Correct rounding errors
-        _transform.position = (_transform.position - center).normalized * radius + center;
+        _transform.RotateAround(center, axis, frequency * 360 * Time.deltaTime);
 
-        _transform.LookAt(center);
-	}
+        // Forward vector aligned to radius vector, upward vector aligned to velocity vector
+        if (reverseForwardAndUpward)
+            _transform.LookAt(2*_transform.position-center, _transform.position+Vector3.Cross(axis, _transform.position - center));
+        // Forward vector aligned to velocity vector, upward vector aligned to radius vector
+        else _transform.LookAt(_transform.position + Vector3.Cross(axis, _transform.position - center), 2 * _transform.position - center);
+
+    }
 }
