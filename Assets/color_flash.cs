@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class color_flash : MonoBehaviour {
     public float duration = 1.0F;
+    public float offset = 0.0F;
     public Renderer rend;
     void Start()
     {
@@ -11,7 +12,7 @@ public class color_flash : MonoBehaviour {
     }
     void Update()
     {
-        float hue = Mathf.PingPong(Time.time, duration) / duration;
+        float hue = Mathf.PingPong(Time.time+offset, duration) / duration;
         rend.material.color = Color.HSVToRGB(hue, 0.8f, 0.8f);
     }
 }
