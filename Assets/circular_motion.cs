@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class circular_motion : MonoBehaviour {
     public Vector3 center;
-    public Vector3 axis_of_rotation;
+    public Vector3 axisOfRotation;
     public float frequency;
 
     private Transform _transform;
@@ -16,9 +16,14 @@ public class circular_motion : MonoBehaviour {
         _transform = this.transform;
 
         radius = (_transform.position - center).magnitude;
-        omega = axis_of_rotation.normalized * (2f * Mathf.PI * frequency); // omega has magnitute w = 2*pi*f
+        omega = axisOfRotation.normalized * (2f * Mathf.PI * frequency); // omega has magnitute w = 2*pi*f
 	}
 	
+    void UpdateAxisOfRotation (Vector3 newAxis)
+    {
+        omega = axisOfRotation.normalized * (2f * Mathf.PI * frequency);
+    }
+
 	// Update is called once per frame
 	void Update () {
         // v = omega x r
