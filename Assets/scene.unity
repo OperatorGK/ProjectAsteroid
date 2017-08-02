@@ -166,7 +166,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 150
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 1367623336}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Center
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,7 +339,7 @@ Transform:
   m_GameObject: {fileID: 1367623335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 32, y: 32, z: 32}
+  m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -361,7 +361,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06c3303f33a68e94f8589c48d570ec7c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32
+      value: 504
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06c3303f33a68e94f8589c48d570ec7c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -403,6 +403,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06c3303f33a68e94f8589c48d570ec7c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06c3303f33a68e94f8589c48d570ec7c, type: 3}
   m_IsPrefabParent: 0
@@ -418,10 +422,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1827687150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18f370c154c4d50499b20911955ab14b, type: 3}
+  m_Script: {fileID: 11500000, guid: 42b4504f48cdf2a459c15776227a4b02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 0, y: 0, z: 0}
   axis: {x: -1, y: 0, z: 0}
-  frequency: 0.5
+  frequency: 0.0625
   reverseForwardAndUpward: 1
+  input_sensivity: 1
+  camera_offset: 20

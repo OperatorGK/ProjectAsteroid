@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Circular_motion : MonoBehaviour {
-    public Vector3 center;
-    public Vector3 axis;
-    public float frequency;
-    public bool reverseForwardAndUpward;
+    public Vector3 axis = Vector3.left;
+    public float frequency = 0.5f;
+    public bool reverseForwardAndUpward = false;
 
-    private Transform _transform;
-
+    protected Transform _transform;
+    protected Vector3 center;
 
 	// Use this for initialization
-	void Start () {
+	protected void Start () {
         _transform = this.transform;
+        center = GameObject.FindWithTag("Center").transform.position;
     }
 	
 	// Update is called once per frame
-	void Update () {
+	protected void Update () {
         _transform.RotateAround(center, axis, frequency * 360 * Time.deltaTime);
 
         // Forward vector aligned to radius vector, upward vector aligned to velocity vector
