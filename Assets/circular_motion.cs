@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Circular_motion : MonoBehaviour {
     public Vector3 axis = Vector3.left;
-    public float frequency = 0.5f;
+    public float frequency = 0.035f;
     public bool reverseForwardAndUpward = false;
 
     protected Transform _transform;

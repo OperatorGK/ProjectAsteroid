@@ -10,7 +10,7 @@ Material:
   m_Shader: {fileID: 103, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 1000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -90,7 +90,7 @@ Material:
       second: 0
     - first:
         name: _Exposure
-      second: 1
+      second: 0.25
     - first:
         name: _GlossMapScale
       second: 1
@@ -139,4 +139,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Tint
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      second: {r: 0.41911763, g: 0.35440093, b: 0.35440093, a: 0.5}

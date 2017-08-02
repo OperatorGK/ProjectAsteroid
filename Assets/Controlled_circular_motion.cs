@@ -5,7 +5,7 @@ using UnityEngine;
 public class Controlled_circular_motion : Circular_motion
 {
     public float input_sensivity = 5f;
-    public float camera_offset = 16f;
+    public float camera_offset = 20f;
 
     protected Transform mainCamera;
 
