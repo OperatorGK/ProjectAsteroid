@@ -1,5 +1,4 @@
 * text=auto
-
 # Unity files
 *.meta -text -merge=unityamlmerge
 *.unity -text -merge=unityamlmerge
@@ -58,6 +57,7 @@
 *.gz filter=lfs diff=lfs merge=lfs -text
 *.rar filter=lfs diff=lfs merge=lfs -text
 *.tar filter=lfs diff=lfs merge=lfs -text
+*.assets filter=lfs diff=lfs merge=lfs -text
 *.gitignore filter=lfs diff=lfs merge=lfs -text
 *.cs filter=lfs diff=lfs merge=lfs -text
 *.meta filter=lfs diff=lfs merge=lfs -text
@@ -86,5 +86,4 @@
 *.ini filter=lfs diff=lfs merge=lfs -text
 *.xml filter=lfs diff=lfs merge=lfs -text
 *.info filter=lfs diff=lfs merge=lfs -text
-*.assets filter=lfs diff=lfs merge=lfs -text
 *.resS filter=lfs diff=lfs merge=lfs -text
