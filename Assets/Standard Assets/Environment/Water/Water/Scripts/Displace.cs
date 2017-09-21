@@ -1,36 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityStandardAssets.Water
-{
-    [ExecuteInEditMode]
-    [RequireComponent(typeof(WaterBase))]
-    public class Displace : MonoBehaviour
-    {
-        public void Awake()
-        {
-            if (enabled)
-            {
-                OnEnable();
-            }
-            else
-            {
-                OnDisable();
-            }
-        }
-
-
-        public void OnEnable()
-        {
-            Shader.EnableKeyword("WATER_VERTEX_DISPLACEMENT_ON");
-            Shader.DisableKeyword("WATER_VERTEX_DISPLACEMENT_OFF");
-        }
-
-
-        public void OnDisable()
-        {
-            Shader.EnableKeyword("WATER_VERTEX_DISPLACEMENT_OFF");
-            Shader.DisableKeyword("WATER_VERTEX_DISPLACEMENT_ON");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1a19f49b64ebc7b8a69df850cc18a55d22a34c23869a14a55ef13d9cef81a0b
+size 771

@@ -1,17 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityStandardAssets.ImageEffects
-{
-    [ExecuteInEditMode]
-    [AddComponentMenu("Image Effects/Color Adjustments/Color Correction (Ramp)")]
-    public class ColorCorrectionRamp : ImageEffectBase {
-        public Texture  textureRamp;
-
-        // Called by camera to apply image effect
-        void OnRenderImage (RenderTexture source, RenderTexture destination) {
-            material.SetTexture ("_RampTex", textureRamp);
-            Graphics.Blit (source, destination, material);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f59d085f639c05b657947f18589402114cca77a089e3954fa2fdad063a400b68
+size 545

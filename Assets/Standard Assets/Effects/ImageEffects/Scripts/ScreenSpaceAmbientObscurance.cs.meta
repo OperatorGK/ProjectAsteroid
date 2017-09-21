@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: 75febd242c999f04d9654522a10c006b
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences:
-  - rand: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
-  - aoShader: {fileID: 4800000, guid: 95616c020c5604dda96cf76afbbc0272, type: 3}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:2813bbf7721f8765a2f314883b1767d02746168bbe8f14378b82966567e392fd
+size 353

@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 478a2083ad114a07d000fbfb8d76c639
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences:
-  - shader: {fileID: 4800000, guid: e9ba2083ad114a07d000fbfb8d76c639, type: 3}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:ecdc206338233c0e1d42b54511ea47ce60ca842c109cd304448354d7d73e7052
+size 254

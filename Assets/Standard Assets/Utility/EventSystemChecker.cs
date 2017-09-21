@@ -1,21 +1,3 @@
-using System;
-using System.Collections;
-using UnityEngine;
-using UnityEngine.EventSystems;
-
-public class EventSystemChecker : MonoBehaviour
-{
-    //public GameObject eventSystem;
-
-	// Use this for initialization
-	void Awake ()
-	{
-	    if(!FindObjectOfType<EventSystem>())
-        {
-           //Instantiate(eventSystem);
-            GameObject obj = new GameObject("EventSystem");
-            obj.AddComponent<EventSystem>();
-            obj.AddComponent<StandaloneInputModule>().forceModuleActive = true;
-        }
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34301f40bc02cdde18935313de9f525f9bc1fce6c7e010297200b7bc10663b8f
+size 521

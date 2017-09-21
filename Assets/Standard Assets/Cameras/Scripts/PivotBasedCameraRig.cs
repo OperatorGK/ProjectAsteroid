@@ -1,28 +1,3 @@
-using System;
-using UnityEngine;
-
-
-namespace UnityStandardAssets.Cameras
-{
-    public abstract class PivotBasedCameraRig : AbstractTargetFollower
-    {
-        // This script is designed to be placed on the root object of a camera rig,
-        // comprising 3 gameobjects, each parented to the next:
-
-        // 	Camera Rig
-        // 		Pivot
-        // 			Camera
-
-        protected Transform m_Cam; // the transform of the camera
-        protected Transform m_Pivot; // the point at which the camera pivots around
-        protected Vector3 m_LastTargetPosition;
-
-
-        protected virtual void Awake()
-        {
-            // find the camera in the object hierarchy
-            m_Cam = GetComponentInChildren<Camera>().transform;
-            m_Pivot = m_Cam.parent;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6ab3bfb15db23c31b623f5943d9f9b3161d1569a228c3ed1191f2b6e1ad260f
+size 787

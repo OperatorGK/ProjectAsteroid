@@ -1,27 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityStandardAssets.Water
-{
-    public class MeshContainer
-    {
-        public Mesh mesh;
-        public Vector3[] vertices;
-        public Vector3[] normals;
-
-
-        public MeshContainer(Mesh m)
-        {
-            mesh = m;
-            vertices = m.vertices;
-            normals = m.normals;
-        }
-
-
-        public void Update()
-        {
-            mesh.vertices = vertices;
-            mesh.normals = normals;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:65f1e0ad50a4892fe345225f6034103cc00262f4569121ef613e539961635ce6
+size 485

@@ -1,10 +1,3 @@
-fileFormatVersion: 2
-guid: e50e925fb93c78246bf995d9dc3a2330
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences:
-  - tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:64e061de506f44c2077debdbea53eafe915f179486f72e6be0c2f5c8ad0c8fec
+size 278

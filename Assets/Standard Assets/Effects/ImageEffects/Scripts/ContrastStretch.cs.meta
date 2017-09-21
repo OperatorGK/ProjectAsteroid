@@ -1,12 +1,3 @@
-fileFormatVersion: 2
-guid: ec92b071d2d424aecb3e46f28eb63174
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences:
-  - shaderLum: {fileID: 4800000, guid: befbb4b9c320b4b18a08ef7afb93b6c9, type: 3}
-  - shaderReduce: {fileID: 4800000, guid: 57b33a14b6d5347c5a85c36f6cb3b280, type: 3}
-  - shaderAdapt: {fileID: 4800000, guid: 257bc83cbeb544540bd0e558aa9b1383, type: 3}
-  - shaderApply: {fileID: 4800000, guid: f4901f25d4e1542589348bbb89563d8e, type: 3}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:67c16dc2f6a2781a3b0fa63eecacf0b567d2aea1e28494cea2eb8c110f0f95d0
+size 510

@@ -1,18 +1,3 @@
-using System;
-using UnityEngine;
-using Random = UnityEngine.Random;
-
-namespace UnityStandardAssets.Effects
-{
-    public class SmokeParticles : MonoBehaviour
-    {
-        public AudioClip[] extinguishSounds;
-
-
-        private void Start()
-        {
-            GetComponent<AudioSource>().clip = extinguishSounds[Random.Range(0, extinguishSounds.Length)];
-            GetComponent<AudioSource>().Play();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8890422daed1309b30eb2f9fec266b051cceca1a47706056baaff2a79d65d0d1
+size 422

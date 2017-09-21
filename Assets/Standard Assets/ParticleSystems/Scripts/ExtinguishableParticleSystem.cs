@@ -1,29 +1,3 @@
-using System;
-using UnityEngine;
-
-
-namespace UnityStandardAssets.Effects
-{
-    public class ExtinguishableParticleSystem : MonoBehaviour
-    {
-        public float multiplier = 1;
-
-        private ParticleSystem[] m_Systems;
-
-
-        private void Start()
-        {
-            m_Systems = GetComponentsInChildren<ParticleSystem>();
-        }
-
-
-        public void Extinguish()
-        {
-            foreach (var system in m_Systems)
-            {
-                var emission = system.emission;
-                emission.enabled = false;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:30c056b30049eedd56ce8fe61a4aa633ec90b63b3c5602641c18d0bf0c267202
+size 570
